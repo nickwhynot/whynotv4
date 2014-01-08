@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en" style="overflow-x: hidden">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="/docs-assets/ico/favicon.png">
+  <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <title>whynot - the everyday suggestions app</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="starter-template.css" rel="stylesheet">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46923458-1', 'whynotapp.co.uk');
+  ga('require', 'linkid', 'linkid.js');
+  ga('send', 'pageview');
+
+</script>
+  </head>
+
+  <body>
+
+ <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">whynot</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="likes.html">Likes</a></li>
+            <li><a href="pins.html">Pins</a></li>
+            <li><a href="wordpress">Blogs</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <style>
+    .divider{
+    width:5px;
+    height:auto;
+    display:inline-block;
+    }
+    </style>
+
+    <center>
+      <div class="container">
+        <h3 id='name'></h3>
+        <h2 id='loading'>Loading</h2>
+        <div style="width: 75%;">
+          <img src='' id='image' height='50%' class="img-responsive img-thumbnail">
+        </div>
+        <h4 id='rating'></h4>
+        <h4 id='walk'></h4>
+        <div id='tags'>
+        </div>
+      </br>
+      <div id='swipebuttons'>
+        <button type="button" class="btn btn-danger btn-lg" id='dislike'>Dislike</button>
+        <button type="button" class="btn btn-warning btn-lg" id='pin'><span class="glyphicon glyphicon-pushpin"></span></button> 
+        <button type="button" class="btn btn-success btn-lg" id='like'>Like</button>
+        </br>
+        </br>
+        <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                Reviews
+              </a>
+            </h4>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse">
+            <div class="panel-body">
+              <blockquote>
+                <p id='review'></p>
+                <small id='reviewer'></small>
+              </blockquote>
+              <h6>
+                <ul class="pagination">
+                  <li id='rev1'><a>Review 1</a></li>
+                  <li id='rev2'><a>Review 2</a></li>
+                  <li id='rev3'><a>Review 3</a></li>
+                </ul>
+              </h6>
+              <address id='add'>
+              </address>
+              <img src='' id='map' class='img-responsive img-thumbnail'>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </br>
+        </br>
+          <center>
+      <a href='http://facebook.com/whynotapp'><i class="fa fa-facebook fa-3x"></i></a>
+      <a href='http://twitter.com/whynotapp'><i class="fa fa-twitter fa-3x"></i></a>
+      <a href='http://instagram.com/whynotapp'><i class="fa fa-instagram fa-3x"></i></a>
+      <a href='http://pinterest.com/teamwhynot/'><i class="fa fa-pinterest fa-3x"></i></a>
+      </center>
+       </br>
+    </div><!-- /.container -->
+  </center>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src='load.js'></script>
+    <script src='pins.js'></script>
+  </body>
+</html>
